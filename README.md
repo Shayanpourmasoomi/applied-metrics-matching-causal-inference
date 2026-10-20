@@ -25,6 +25,8 @@ The write-up also discusses the identifying assumptions (conditional independenc
 analysis.md   # full analysis: code, balance tables, estimates and interpretation
 ```
 
+Figures and tables are generated when the code is run; the figure files themselves are not stored in the repository.
+
 ## Reproducing
 
 ```bash
