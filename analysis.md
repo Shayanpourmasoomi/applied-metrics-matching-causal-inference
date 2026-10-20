@@ -30,8 +30,6 @@ print("All Columns:", data.columns.tolist())
 # Q_2_part_a
 
 
-
-
 ```python
 
 treatment_dist = data['treatment'].value_counts(normalize=True) * 100
@@ -65,7 +63,6 @@ print(data.groupby('treatment')['propensity_score'].describe())
 
 
     
-![png](output_4_1.png)
     
 
 
@@ -150,13 +147,10 @@ plt.show()
 
 
     
-![png](output_6_1.png)
     
 
 
-
     
-![png](output_6_2.png)
     
 
 
@@ -369,7 +363,6 @@ print(hours_sq_model.summary())
 # Part a
 
 
-
 ```python
 print(data['education_level'].unique())
 ```
@@ -495,9 +488,7 @@ plt.show()
 </div>
 
 
-
     
-![png](output_17_2.png)
     
 
 
@@ -600,12 +591,10 @@ plt.show()
 
 
     
-![png](output_19_1.png)
     
 
 
 # Q_3 Part c
-
 
 
 ```python
@@ -617,7 +606,6 @@ data_q3['treatment'] = np.where(data_q3['remote_work_frequency'] >= q75, 1, 0)
 
 if data_q3.shape[0] > 5000:
     data_q3 = data_q3.sample(n=5000, random_state=42)
-
 
 
 ps_covariates = ['age', 'education_level_encoded', 'years_at_company', 'overtime_hours']
@@ -696,7 +684,6 @@ plt.show()
 
 
     
-![png](output_22_0.png)
     
 
 
@@ -959,7 +946,6 @@ print("Number of matched observations with EXACT criteria on 5 vars:",
 # Part c
 
 # section i
-
 
 
 ```python
